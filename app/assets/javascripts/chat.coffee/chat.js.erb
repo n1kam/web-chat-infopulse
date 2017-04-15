@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    attach();
-});
+    attach();});
   var socket = new WebSocket('ws://127.0.0.1:3000/chat_handler');
   var angular_ap = angular.module('web-chat', []);
   angular_ap.controller('web-chat-controller', function ($scope) {
@@ -110,20 +109,12 @@ function getCookie(name) {
 
 function attach() {
   var but_send = document.getElementById('send');
-//  console.log(but_send);
-//  if(but_send){
-    but_send.addEventListener('click', send);
-//  }
+  but_send.addEventListener('click', send);
 
   var but_broadcast = document.getElementById('broadcast');
-//  console.log(but_broadcast);
-//  if(but_broadcast) {
-    but_broadcast.addEventListener('click', broadcast);
-//  }
+  but_broadcast.addEventListener('click', broadcast);
+
 
   var but_disconnect = document.getElementById('disconnect');
-  //console.log(but_disconnect);
-//  if(but_disconnect){
-    but_disconnect.addEventListener('click', disconnect);
-//  }
+  but_disconnect.addEventListener('click', disconnect);
 }

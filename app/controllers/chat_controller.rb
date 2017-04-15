@@ -28,16 +28,14 @@ class ChatController < ApplicationController
             answer_json={}
             answer_json['auth']='no'
             client_sock.send_data(answer_json.to_json)
-            return
           end
           # massages is the list of JSON
           messages=get_messages(login)
           messages.each do |mas|
             client_sock.send_data(mas)
           end
-          return
         end
-
+        byebug
         if json_message['broadcast']!=nil && get_user_by_socket(client_sock)!=nil
           mess=json_message['broadcast']
           login=get_user_by_socket(client_sock)
@@ -49,7 +47,6 @@ class ChatController < ApplicationController
           for value in $chat_users.values
             value[0].send_data(json_string)
           end
-          return
         end
 
         if json_message['name']!=nil && get_user_by_socket(client_sock)!=nil
@@ -57,7 +54,7 @@ class ChatController < ApplicationController
           sender=get_user_by_socket(client_sock)
           mess=json_message['message']
           r_sock=$chat_users[reciever]
-          byebug
+
           if r_sock!=nil
             reciever_sock=r_sock[0]
             json_message={}
