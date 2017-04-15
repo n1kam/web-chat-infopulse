@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2258175301">
+    <data-source source="LOCAL" name="PostgreSQL - webchat_dev@localhost" uuid="867e4fd3-e055-4d99-8773-ee7c6cd3bb60">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/webchat_dev</jdbc-url>
+    </data-source>
+  </component>
+</project>

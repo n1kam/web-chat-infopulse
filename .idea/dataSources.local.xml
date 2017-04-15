@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - webchat_dev@localhost" uuid="867e4fd3-e055-4d99-8773-ee7c6cd3bb60">
+      <secret-storage>memory</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-scope>webchat_dev:pg_catalog,postgres,public</introspection-scope>
+      <resolve-scope>webchat_dev:postgres,public</resolve-scope>
+    </data-source>
+  </component>
+</project>

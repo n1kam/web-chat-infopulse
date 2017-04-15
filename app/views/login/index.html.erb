@@ -1,0 +1,12 @@
+<center>
+  <%=@error %>
+  <%=form_tag(controller:'login', action: 'create', method: 'post') do %>
+    <%= label_tag(:l, "Логин") %>
+    <%= text_field_tag(:l) %>
+    <br>
+    <%= label_tag(:p, "Пароль") %>
+    <%= password_field_tag(:p) %>
+    <br>
+    <%= submit_tag('Вход') %>
+  <% end %>
+</center>
