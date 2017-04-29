@@ -35,7 +35,6 @@ class ChatController < ApplicationController
             client_sock.send_data(mas)
           end
         end
-        byebug
         if json_message['broadcast']!=nil && get_user_by_socket(client_sock)!=nil
           mess=json_message['broadcast']
           login=get_user_by_socket(client_sock)
